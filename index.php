@@ -8,7 +8,7 @@ if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
 } else {
   $ip = $_SERVER['REMOTE_ADDR'];
 }
-$a = strtolower($_SERVER['HTTP_USER_AGENT']);
+$a = $_SERVER['HTTP_USER_AGENT'];
 error_log($ip." | ".$a, 0);
 
 print_r('<pre>');
