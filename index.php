@@ -8,3 +8,7 @@ if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
 }
 $a = strtolower($_SERVER['HTTP_USER_AGENT']);
 error_log($ip." | ".$a, 0);
+
+print_r('<pre>');
+print_r($_SERVER);
+print_r('</pre>');
